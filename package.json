@@ -6,10 +6,13 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production PORT=80 pm2 start app.js",
     "dev": "nodemon app",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "MincolnCho",
   "license": "MIT",
+  "homepage": "https://mincoln419.github.io/deploy-node",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-redis": "^6.0.0",
@@ -19,6 +22,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
+    "gh-pages": "^3.2.3",
     "helmet": "^4.6.0",
     "hpp": "^0.2.3",
     "morgan": "^1.10.0",
