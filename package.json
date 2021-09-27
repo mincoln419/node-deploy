@@ -1,0 +1,41 @@
+{
+  "name": "nodebird",
+  "version": "0.0.1",
+  "description": "\"익스프레스로 만드는 sns서비스\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production PORT=80 pm2 start app.js",
+    "dev": "nodemon app",
+    "test": "jest"
+  },
+  "author": "MincolnCho",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-redis": "^6.0.0",
+    "cookie-parser": "^1.4.5",
+    "cross-env": "^7.0.3",
+    "csurf": "^1.11.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "mysql2": "^2.3.0",
+    "nunjucks": "^3.2.3",
+    "passport": "^0.5.0",
+    "passport-kakao": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "pm2": "^5.1.2",
+    "redis": "^3.1.2",
+    "sanitize-html": "^2.5.1",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
