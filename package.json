@@ -12,7 +12,7 @@
   },
   "author": "MincolnCho",
   "license": "MIT",
-  "homepage": "https://mincoln419.github.io/deploy-node",
+  "homepage": "https://mincoln419.github.io/deploy-node/",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-redis": "^6.0.0",
